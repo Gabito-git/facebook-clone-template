@@ -1,0 +1,27 @@
+.sidelink{
+    // background-color: darkgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 1rem;
+    width: 70%;
+    // margin-bottom: 2rem;
+    
+
+    &__img-container{
+        width: 3.2rem;
+        
+        img{
+            max-width: 100%;
+        }
+    }
+
+    p{
+        margin-left: 1rem;
+    }
+
+    &:hover{
+        background-color: darken($color: $background, $amount: 5);
+        border-radius: 5px;
+    }
+    
+}

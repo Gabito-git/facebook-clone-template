@@ -1,0 +1,98 @@
+.login{
+    background-color: $background;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__box{
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba($color: #000000, $alpha: 0.2);
+        padding: 1.5rem;
+        background-color: $white;
+        width: 37rem;
+
+        h2{
+            font-size: 3.1rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            color: $light-grey;
+            margin-top: 4px;
+        }
+
+        &--register{
+            width: 40rem;
+        }
+    }
+
+    &__form{
+        margin-top: 1.5rem;
+    }
+
+    &__input-field{
+        border: 1px solid darken($color: $background, $amount: 10);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:focus-within{
+            border: 1px solid $primary;
+        }
+    }
+
+    &__input{
+        border: none;
+        padding: 1.4rem;
+        font-size: 1.5rem;
+        width: 100%;
+
+        &:focus{
+            outline: none;
+        }
+
+        &--register{
+            padding: 1rem;
+            background-color: $background;
+        }
+    }
+
+    &__separator{
+        height: 1px;
+        border-bottom: 1px solid darken($color: $background, $amount: 5);
+    }
+
+    &__newuser-field{
+        width: 18rem;
+        margin: 2rem auto 0 auto;
+
+    }
+
+    &__google{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__linkLogin, &__linkRegister{
+        text-decoration: none;
+        display: inline-block;        
+    }
+
+    &__linkLogin{
+        margin-top: 2rem;
+        color: $primary;
+        font-size: 1.3rem;
+    }
+
+    &__linkRegister{
+        color: white;
+        background-color: $green;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 1.2rem ;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,81 @@
+.postbox{
+    background-color: $white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: $light-grey;
+    box-shadow: 1px 1px rgba(0,0,0, 0.1);
+
+    &__top, &__bottom{
+        display: flex;        
+    }
+
+    &__top{
+        padding-bottom: 1rem;
+        border-bottom: 1px solid darken($color: $background, $amount: 5);
+    }
+
+    &__input-box{
+
+        align-items: center;
+        background-color: $background;
+        border-radius: 15px;
+        display: flex;
+        flex: 1;
+        margin-left: 1rem;
+
+        input{
+            border: none;
+            background-color: transparent;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            width: 100%;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+    }
+
+    &__bottom{
+        margin-top: 1rem;
+    }
+
+    &__option{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 10px;
+        // background-color: darkkhaki;
+        flex-basis: 33.3%;
+        display: flex;
+        justify-content: center;
+        padding: 3px 0;
+
+        &:hover{
+            background-color: $background;
+        }        
+
+        p{
+            font-size: 1.3rem;
+            margin-left: 5px;
+        }
+    }
+
+    &__icon{
+        font-size: 2.7rem;
+
+        &--red{
+            color: lighten($color: red, $amount: 10)
+        }
+
+        &--green{
+            color: lighten($color: darkgreen, $amount: 50)
+        }
+
+        &--yellow{
+            color: lighten($color: yellow, $amount: 10)
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.modalPost{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $background, $alpha: 0.8);
+    z-index: 10;
+    // backdrop-filter: blur(5px);
+    
+    &__box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 1.4rem;
+        width: 45rem;
+        background-color: #fff;
+        
+        transform: translate(-50%, -50%) ;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 2rem rgba(#000, .3);
+        color: $dark-grey;
+        transition: all .8s .5s;
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        // background-color: darkmagenta;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid darken($color: $background, $amount: 5);
+    }
+
+    &__title{
+        flex: 1;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    &__closeIcon{
+        align-items: center;
+        background-color: darken($color:$background, $amount: 5) ;
+        border-radius: 999px;
+        color: $light-grey;
+        cursor: pointer;
+        display: flex;
+        font-size: 2.5rem;
+        justify-content: center;
+        height: 3.4rem;
+        width: 3.4rem;
+
+        &:hover{
+            background-color: darken($color: $background, $amount: 10);
+        }
+    }
+
+    &__user-info, span{
+
+        align-items: center;
+        display: flex;        
+    }
+
+    &__user-info{
+        padding-top: 1.5rem;
+    }
+
+    &__user-name{
+        margin-left: 1rem;
+
+        h4{
+           font-size: 1.3rem;     
+        }
+
+    }
+
+    & span{
+        background-color: darken($color:$background, $amount: 5);
+        padding: .3rem .5rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    &__body{
+        border: none;
+        resize: none;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 2.2rem;
+        font-family: inherit;
+        height: 14rem;
+
+        &:focus{
+            outline: none;
+        }
+        
+        &::placeholder{
+            color: lighten($color: $light-grey, $amount: 25);
+        }
+
+        &--update{
+            font-size: 1.25rem!important;
+            height: 5rem;
+        }
+    }
+
+    &__add-image{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 1rem;
+        border: 1px solid darken($color: $background, $amount: 10);
+        border-radius: 5px;
+
+        p{
+            font-size: 1.35rem;
+            color: $dark-grey;
+        }
+
+        
+    }
+
+    &__img-icon{
+        cursor: pointer;
+        color:green;
+        font-size: 2.2rem;
+    }
+
+    &__image{
+
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+}

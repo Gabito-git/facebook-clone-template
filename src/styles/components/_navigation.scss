@@ -1,0 +1,127 @@
+
+.navigation{
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    color: $light-grey;
+    padding: 0 1rem;
+    box-shadow: 0 3px darken($color: $background, $amount: 5) ;
+    position: relative;
+
+    &__left, &__center, &__right{
+        display: flex;
+    }
+
+    &__left{
+        flex-basis: 17%;
+        padding: 7px 0;
+    }
+    
+   &__logo{
+        width: 3.6rem; 
+
+        img{
+            max-width: 100%;
+        }
+
+    }
+
+    &__search-container{
+        align-items: center;
+        background-color: $background;
+        border-radius: 2rem;
+        display: flex;
+        flex: 1;
+        margin-left: 7px;
+        padding-left: 1rem;
+
+        input{
+            border: none;
+            background-color: transparent;
+            width: 100%;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    &__center{       
+        justify-content: space-around;
+        font-size: 2.5rem;
+        flex-basis: 40%;
+        align-self: stretch;
+        padding: 2px 0;       
+
+        .active{
+            color: $primary;
+            border-bottom: 3px solid $primary;
+        }       
+    }
+
+    &__icon{
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 11rem;
+        cursor: pointer;       
+
+        &:first-child{
+            border-radius: 0;
+            font-size: 2.9rem;
+        }
+
+        &:hover{
+            background-color: $background;
+        }
+    }
+
+    &__right{
+        align-items: center;
+        flex-basis: 18%;
+        justify-content: space-between;
+        color: $dark-grey;
+        
+
+    }
+
+    &__user-info{
+        display: flex;
+        align-items: center;
+
+        p{
+            font-size: 1.35rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    &__right-icons{
+        display: flex;              
+    }
+
+    &__right-icon-container{
+        background-color: darken($color:$background, $amount: 5);
+        border-radius: 999px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        height: 3.6rem;
+        margin-right: 8px;
+        width: 3.6rem;
+
+        &:last-child{
+            font-size: 2.9rem;           
+        }       
+        
+    }
+
+    &__active{
+        color: blue ;
+    }
+
+}

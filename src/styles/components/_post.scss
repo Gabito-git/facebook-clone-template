@@ -1,0 +1,134 @@
+.post{
+    background-color: $white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    color: $light-grey;  
+    position: relative; 
+    z-index: 0;
+
+    &__header,
+    &__user-info-container,
+    &__user-info span,
+    &__comment
+    {
+        display: flex;
+        align-items: center;
+    } 
+    
+    &__header{
+        padding: 0 1.5rem;
+    }
+
+    &__user-info-container{
+        justify-content: space-between;
+        flex: 1;
+        margin-left: 5px;
+    }
+
+    &__user-info{
+
+        p{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $dark-grey;
+        } 
+        
+    }
+
+    &__more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover{
+            background-color: $background;
+        }
+    }
+
+    &__message{
+        color: $dark-grey;
+        font-size: 1.6rem;
+        padding: 1rem 1.5rem;
+    }
+
+    &__image{
+
+        cursor: pointer;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__footer{
+        padding: 0 1.5rem;
+    }
+
+    &__options{
+        display: flex;
+        justify-content: space-around;
+        // padding: 1rem 0;
+        border-top: 1px solid darken($color: $background, $amount: 5);
+        border-bottom: 1px solid darken($color: $background, $amount: 5);
+        margin-bottom: 7px;
+        // background-color: darkgoldenrod;
+        
+    }
+
+    &__option{
+        align-items: center;
+       
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        font-size: 1.8rem;
+        justify-content: center;
+        margin: 2px;
+        padding: .5rem 0;      
+
+        &:last-child{
+            margin-right: 0;
+            font-size: 2.2rem;
+        }
+        
+
+        p{
+            font-size: 1.3rem;
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color: $background;
+        }
+    }
+
+    &__input-box-comment{
+        flex: 1;
+        background-color: $background;
+        border: 1px solid darken($color: $background, $amount: 5);
+        border-radius: 1.5rem;
+        margin-left: 5px;
+        
+
+        input{
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            padding: 7px;
+
+            &:focus{
+                outline: none
+            }
+        }
+    }
+
+   
+}

@@ -1,0 +1,54 @@
+.mainscreen{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // background-color: darkgreen;
+
+    &__body{
+        display: flex;
+        flex: 1;
+    }
+
+    &__left{
+        flex-basis: 30%;
+        z-index: 2;
+    }
+
+    &__center{
+        height: 93vh;
+        flex-basis: 39%;      
+        overflow-y: auto; 
+
+        width: 100vw;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        
+        // direction: rtl;
+        // overflow-x: hidden;
+
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+
+        // &::-webkit-scrollbar {
+        //     direction: ltr;
+        // }   
+        
+        
+    }
+
+    &__center-content{
+        width: 60rem;
+    }
+
+    &__right{
+        flex:1;
+        // background-color: darkkhaki;
+    }
+
+}

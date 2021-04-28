@@ -1,0 +1,27 @@
+.sidebar{
+    // background-color: darkgreen;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 100%;
+    padding: 2rem 7px;
+
+
+    &__link{
+
+        & > div {
+            display: flex;
+            align-items: center;
+        }      
+        
+    }
+
+    &__user-info{
+        padding-left: 1rem;
+        margin-bottom: 5px;
+
+        p{
+            margin-left: 1rem;
+        }
+    }
+
+}

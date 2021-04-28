@@ -1,0 +1,40 @@
+.history{
+    // background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 19rem;
+    overflow: hidden;
+    position: relative;
+    width: 11rem;
+    
+    
+    &  img{
+        max-height: 100%;
+        transition: all .5s;
+    }
+    
+
+    &__text{
+        color: $white;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 78%;
+        left: 10%;
+        width: 5rem;
+    }
+
+    &__img-small{
+        border: 4px solid $primary;
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    &:hover > img{
+        transform: scale(1.02);
+    }
+}
